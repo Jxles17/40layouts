@@ -1,20 +1,134 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-    <?php
+<?php
             $i = 1; 
             
-            switch($i){
-                case 0:
-                    echo" <link rel="stylesheet" type="text/css" href="css/LayoutGala01.css" />";
-                    break;
-                case 1:
-                    echo" <link rel="stylesheet" type="text/css" href="css/LayoutGala02.css" />";
-                    break;
-                default:
+            if($i == 1) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala01.css" /> <?php
                     }
-    ?>
-<title>Layout 1</title>
+            elseif ($i == 2) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala02.css" /> <?php
+                    }
+            elseif ($i == 3) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala03.css" /> <?php
+                    }
+            elseif ($i == 4) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala04.css" /> <?php
+                    }
+            elseif ($i == 5) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala05.css" /> <?php
+                     }
+            elseif ($i == 6) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala06.css" /> <?php
+                    }
+            elseif ($i == 7) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala07.css" /> <?php
+                    }
+            elseif ($i == 8) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala08.css" /> <?php
+                    }
+            elseif ($i == 9) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala09.css" /> <?php
+                    }
+            elseif ($i == 10) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala10.css" /> <?php
+                    }
+            elseif ($i == 11) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala11.css" /> <?php
+                    }
+            elseif ($i == 12) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala12.css" /> <?php
+                    }
+            elseif ($i == 13) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala13.css" /> <?php
+                    }
+            elseif ($i == 14) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala14.css" /> <?php
+                    }
+            elseif ($i == 15) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala15.css" /> <?php
+                    }
+            elseif ($i == 16) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala16.css" /> <?php
+                    }
+            elseif ($i == 17) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala17.css" /> <?php
+                    }
+            elseif ($i == 18) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala18.css" /> <?php
+                    }
+            elseif ($i == 19) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala19.css" /> <?php
+                    }
+            elseif ($i == 20) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala20.css" /> <?php
+                    }
+            elseif ($i == 21) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala21.css" /> <?php
+                    }
+            elseif ($i == 22) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala22.css" /> <?php
+                    }
+            elseif ($i == 23) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala23.css" /> <?php
+                    }
+            elseif ($i == 24) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala24.css" /> <?php
+                    }
+            elseif ($i == 25) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala25.css" /> <?php
+                    }
+            elseif ($i == 26) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala26.css" /> <?php
+                    }
+            elseif ($i == 27) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala27.css" /> <?php
+                    }
+            elseif ($i == 28) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala28.css" /> <?php
+                    }
+            elseif ($i == 29) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala29.css" /> <?php
+                    }
+            elseif ($i == 30) {
+                        ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala30.css" /> <?php
+                        }
+            elseif ($i == 31) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala31.css" /> <?php
+                    }
+            elseif ($i == 32) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala32.css" /> <?php
+                    }
+            elseif ($i == 33) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala33.css" /> <?php
+                    }
+            elseif ($i == 43) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala34.css" /> <?php
+                    }
+            elseif ($i == 35) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala35.css" /> <?php
+                    }
+            elseif ($i == 36) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala36.css" /> <?php
+                    }
+            elseif ($i == 37) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala37.css" /> <?php
+                    }
+            elseif ($i == 38) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala38.css" /> <?php
+                    }
+            elseif ($i == 39) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala39.css" /> <?php
+                    }
+            elseif ($i == 40) {
+                    ?> <link rel="stylesheet" type="text/css" href="css/LayoutGala40.css" /> <?php
+                    }
+            ?>
+
+
+    
+<title>Layout</title>
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
 <meta name="generator" content="HAPedit 3.1">
 </head>
