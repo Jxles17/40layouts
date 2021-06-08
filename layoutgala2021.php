@@ -1,7 +1,15 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>   
-<title>Layout</title>
+<?php
+if (isset($_GET["layout"])) {
+	$layout = intval($_GET["layout"]);
+} else {
+	$layout = 1;
+}
+if (($layout < 1) OR ($layout > 40)) $layout = 1;
+?>
+<title>Layout n°<?=$layout?></title>
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
 <meta name="generator" content="HAPedit 3.1">
 </head>
@@ -20,12 +28,6 @@ div#extra{background:#FF8539}
 div#footer{background: #333;color: #FFF}
 div#footer p{margin:0;padding:5px 10px}
 <?php
-if (isset($_GET["layout"])) {
-	$layout = intval($_GET["layout"]);
-} else {
-	$layout = 1;
-}
-if (($layout < 1) OR ($layout > 40)) $layout = 1;
 switch ($layout) {
 case 1: 
 ?> 
