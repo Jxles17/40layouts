@@ -1,0 +1,1277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>   
+<title>Layout</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta name="generator" content="HAPedit 3.1">
+</head>
+<body>
+<script type="text/javascript" src="js/filler.js"></script>
+<style type="text/css">
+html,body{margin:0;padding:0}
+body{font: 76% arial,sans-serif}
+p{margin:0 10px 10px}
+#content a, #navigation a, #extra a {display:block;color: #981793;padding:10px}
+div#header h1{height:80px;line-height:80px;margin:0;
+ padding-left:10px;background: #EEE;color: #79B30B}
+div#content p{line-height:1.4}
+div#navigation{background:#B9CAFF}
+div#extra{background:#FF8539}
+div#footer{background: #333;color: #FFF}
+div#footer p{margin:0;padding:5px 10px}
+<?php
+if (isset($_GET["layout"])) {
+	$layout = intval($_GET["layout"]);
+} else {
+	$layout = 1;
+}
+if (($layout < 1) OR ($layout > 40)) $layout = 1;
+switch ($layout) {
+case 1: 
+?> 
+   
+   div#container {
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: 0fr 1fr 0fr;
+   }
+   
+   div#header, div#footer{
+   grid-column-start: 1;
+   grid-column-end: span 3;
+   }
+   
+   div#navigation{
+   grid-column-start: 1;
+   grid-row-start: 2;
+   }
+   
+   div#wrapper{
+   grid-column-start: 2;
+   grid-row-start: 2;
+   }
+   
+   div#extra{
+   grid-column-start: 3;
+   grid-row-start: 2;
+   }
+   
+   <?php
+   break;
+case 2:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 0fr 1fr 0fr;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	} 
+	
+	<?php
+	break;
+case 3:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-rows: 0fr 1fr 0fr;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 4:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-rows: 0fr 1fr 0fr;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 5:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	grid-template-rows: 0fr 1fr 0fr;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 6:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	grid-template-rows: 0fr 1fr 0fr;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 7:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 7.8% 20.8% 7.8% 31.8%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 4;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 8:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 7.8% 20.8% 7.8% 31.8%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 4;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 9:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 20.8% 7.8% 7.8% 31.8%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 4;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 10:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 20.8% 7.8% 7.8% 31.8%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 4;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 11:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 7.8% 7.8% 20.8% 31.8%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 4;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 12:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 7.8% 7.8% 20.8% 31.8%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 4;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 13:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 10.4% 79.2% 10.4%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 14:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 10.4% 79.2% 10.4%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 15:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 79.2% 10.4% 10.4%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 16:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 79.2% 10.4% 10.4%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 17:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 10.4% 10.4% 79.2%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 18:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 10.4% 10.4% 79.2%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 19:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 10.4% 56.6% 33%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 20:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 33% 56.6% 10.4%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 21:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 64.6% 10.4% 25%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 22:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 64.6% 25% 10.4%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 3;
+	}
+	
+	div#navigation{
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-row-start: 2;
+	}
+	
+	<?php
+	break;
+case 23:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 89.6% 10.4%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 24:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 10.4% 89.6%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-row-start: 2;
+	grid-row-end: span 2;
+	}
+	
+	div#extra{
+	grid-column-start: 1;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 25:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 67% 33%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	grid-row-end: span 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 26:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 33% 67%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	grid-row-end: span 2;
+	}
+	
+	div#extra{
+	grid-column-start: 1;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 27:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 1;
+	grid-row-start: 3;
+	}
+	
+	div#wrapper{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 28:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 2;
+	grid-row-start: 3;
+	}
+	
+	div#wrapper{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 1;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 29:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 30:
+	?>
+	
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 70% 30%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 31:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 10.4% 89.6%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 32:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 89.6% 10.4%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 1;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 33:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 26% 10.4% 31.8%;
+	grid-template-rows: auto;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	grid-row-end: span 2;
+	}
+	
+	div#extra{
+	grid-column-start: 3;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 34:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 10.4% 26% 31.8%;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	grid-row-end: span 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 35:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 26% 10.4% 31.8%;
+	grid-template-rows: auto;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 36:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 10.4% 26% 31.8%;
+	grid-template-rows: auto;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 3;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 37:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 26% 10.4% 31.8%;
+	grid-template-rows: auto;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 38:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 10.4% 26% 31.8%;
+	grid-template-rows: auto;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	}
+	
+	div#wrapper{
+	grid-column-start: 3;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 39:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 18.2% 18.2% 31.8%;
+	grid-template-rows: auto;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 2;
+	grid-row-start: 3;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 3;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+case 40:
+	?>
+	
+	div#container {
+	display: grid;
+	grid-template-columns: 31.8% 18.2% 18.2% 31.8%;
+	grid-template-rows: auto;
+	}
+	
+	div#header, div#footer{
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	}
+	
+	div#navigation{
+	grid-column-start: 3;
+	grid-row-start: 3;
+	}
+	
+	div#wrapper{
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	grid-row-start: 2;
+	}
+	
+	div#extra{
+	grid-column-start: 2;
+	grid-row-start: 3;
+	}
+	
+	<?php
+	break;
+}
+?>
+</style>
+<div id="container">
+<div id="header"><h1>Layout n°<?=$layout?></h1></div>
+<div id="wrapper">
+<div id="content">
+<p><strong>1) Content here.</strong> column long long column very long fill fill fill long text text column text silly very make long very fill silly make make long make text fill very long text column silly silly very column long very column filler fill long make filler long silly very long silly silly silly long filler make column filler make silly long long fill very.</p>
+<p>very make make fill silly long long filler column long make silly silly column filler fill fill very filler text fill filler column make fill make text very make make very fill fill long make very filler column very long very filler silly very make filler silly make make column column </p>
+<p>fill long make long text very make long fill column make text very silly column filler silly text fill text filler filler filler make make make make text filler fill column filler make silly make text text fill make very filler column very </p>
+<p>column text long column make silly long text filler silly very very very long filler fill very fill silly very make make filler text filler text make silly text text long fill fill make text fill long text very silly long long filler filler fill silly long make column make silly long column long make very </p>
+</div>
+</div>
+<div id="navigation">
+<p><strong>2) Navigation here.</strong> long long fill filler very fill column column silly filler very filler fill fill filler text fill very silly fill text filler silly silly filler fill very make fill column text column very very column fill fill very silly column silly silly fill fill long filler </p>
+</div>
+<div id="extra">
+<p><strong>3) More stuff here.</strong> very text make long silly make text very very text make long filler very make column make silly column fill silly column long make silly filler column filler silly long long column fill silly column very </p>
+</div>
+<div id="footer">
+<h1>Choose the layout</h1>
+<p>
+<?php
+for ($layout = 1; $layout <= 40; $layout++) {
+	echo "<a href='" . $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] 
+     . explode('?', $_SERVER['REQUEST_URI'], 2)[0] . "?layout=$layout'><img src='images/layout0" . str_pad($layout, 2, '0', STR_PAD_LEFT) . ".gif' title='$layout' alt='$layout' /></a>";
+}
+?>
+</p>
+</div>
+<script type="text/javascript">AddFillerLink("content","navigation","extra")</script>
+</body>
+</html>
+
