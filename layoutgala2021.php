@@ -27,6 +27,16 @@ div#navigation{background:#B9CAFF}
 div#extra{background:#FF8539}
 div#footer{background: #333;color: #FFF}
 div#footer p{margin:0;padding:5px 10px}
+
+/* Mode mobile ici sans media queries */
+
+@media screen and (min-width: 768px) {
+/* un switch avec 2 types de cas  pour ipad*/
+
+}
+
+@media screen and (min-width: 1024px) {
+/* ce switch pour desktop */
 <?php
 switch ($layout) {
 case 1: 
@@ -1878,6 +1888,7 @@ case 40:
 	break;
 }
 ?>
+} /*fermeture de la mediaqueries 1024px */
 </style>
 <div id="container">
 <div id="header"><h1>Layout n°<?=$layout?></h1></div>
