@@ -28,11 +28,13 @@ div#navigation{background:#B9CAFF}
 div#extra{background:#FF8539}
 div#footer{background: #333;color: #FFF}
 div#footer p{margin:0;padding:5px 10px}
+@media screen and (min-width: 1024px) {
 .layoutchoser {
 	position: fixed;
     bottom: 0;
     width: 100%;
 	padding: 1em 1em 0 1em;
+}
 }
 .layoutchoser img { padding: 1em .5em; }
 .layoutchoser a { position:relative; }
