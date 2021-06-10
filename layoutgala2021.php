@@ -20,13 +20,25 @@ html,body{margin:0;padding:0}
 body{font: 76% arial,sans-serif}
 p{margin:0 10px 10px}
 #content a, #navigation a, #extra a {display:block;color: #981793;padding:10px}
-div#header h1{height:80px;line-height:80px;margin:0;
+div#header h1{margin:0;
  padding-left:10px;background: #EEE;color: #79B30B}
+#header img {vertical-align: top; padding: .25em 2em .25em 0;}
 div#content p{line-height:1.4}
 div#navigation{background:#B9CAFF}
 div#extra{background:#FF8539}
 div#footer{background: #333;color: #FFF}
 div#footer p{margin:0;padding:5px 10px}
+.layoutchoser {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+	padding: 1em 1em 0 1em;
+}
+.layoutchoser img { padding: 1em .5em; }
+.layoutchoser a { position:relative; }
+.layoutchoser .legend { position: absolute; top:-1em; right:0; background: #00000080; color: #fff; padding: 0.25em 1em;}
+
+
 
 /* Mode mobile ici sans media queries */
 	div#container {
@@ -1373,7 +1385,7 @@ case 40:
 } /*fermeture de la mediaqueries 1024px */
 </style>
 <div id="container">
-<div id="header"><h1>Layout n°<?=$layout?></h1></div>
+<div id="header"><h1><img src='images/layout0<?php echo str_pad($layout, 2, '0', STR_PAD_LEFT) ?>.gif' />Layout n°<?=$layout?></h1></div>
 <div id="wrapper">
 <div id="content">
 <p><strong>1) Content here.</strong> column long long column very long fill fill fill long text text column text silly very make long very fill silly make make long make text fill very long text column silly silly very column long very column filler fill long make filler long silly very long silly silly silly long filler make column filler make silly long long fill very.</p>
@@ -1390,15 +1402,17 @@ case 40:
 </div>
 <div id="footer">
 <h1>Choose the layout</h1>
-<p>
+</div>
+</div>
+<div class="layoutchoser">
 <?php
 for ($layout = 1; $layout <= 40; $layout++) {
 	echo "<a href='" . $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] 
-     . explode('?', $_SERVER['REQUEST_URI'], 2)[0] . "?layout=$layout'><img src='images/layout0" . str_pad($layout, 2, '0', STR_PAD_LEFT) . ".gif' title='$layout' alt='$layout' /></a>";
+     . explode('?', $_SERVER['REQUEST_URI'], 2)[0] . "?layout=$layout'><span class='legend'>$layout</span><img src='images/layout0" . str_pad($layout, 2, '0', STR_PAD_LEFT) . ".gif' title='$layout' alt='$layout' /></a>";
 }
 ?>
-</p>
 </div>
+
 <script type="text/javascript">AddFillerLink("content","navigation","extra")</script>
 </body>
 </html>
