@@ -1408,7 +1408,7 @@ case 40:
 <?php
 for ($layout = 1; $layout <= 40; $layout++) {
 	echo "<a href='" . $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] 
-     . explode('?', $_SERVER['REQUEST_URI'], 2)[0] . "?layout=$layout'><span class='legend'>$layout</span><img src='images/layout0" . str_pad($layout, 2, '0', STR_PAD_LEFT) . ".gif' title='$layout' alt='$layout' /></a>";
+     . explode('?', $_SERVER['REQUEST_URI'], 2)[0] . "?layout=$layout'><img src='images/layout0" . str_pad($layout, 2, '0', STR_PAD_LEFT) . ".gif' title='$layout' alt='$layout' /><span class='legend'>$layout</span></a>";
 }
 ?>
 </div>
