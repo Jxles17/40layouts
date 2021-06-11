@@ -197,6 +197,7 @@ case 1:
 
 	div#wrapper{
 	grid-column-start: 2;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 
@@ -227,6 +228,7 @@ case 2:
 
 	div#wrapper{
 	grid-column-start: 2;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 
@@ -257,6 +259,7 @@ case 3:
 
 	div#wrapper{
 	grid-column-start: 1;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 
@@ -287,6 +290,7 @@ case 4:
 
 	div#wrapper{
 	grid-column-start: 1;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 
@@ -378,6 +382,7 @@ case 7:
 
 	div#wrapper{
 	grid-column-start: 3;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 
@@ -408,6 +413,7 @@ case 8:
 	
 	div#wrapper{
 	grid-column-start: 3;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -438,6 +444,7 @@ case 9:
 	
 	div#wrapper{
 	grid-column-start: 2;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -468,6 +475,7 @@ case 10:
 	
 	div#wrapper{
 	grid-column-start: 2;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -498,6 +506,7 @@ case 11:
 	
 	div#wrapper{
 	grid-column-start: 4;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -528,6 +537,7 @@ case 12:
 	
 	div#wrapper{
 	grid-column-start: 4;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -558,6 +568,7 @@ case 13:
 	
 	div#wrapper{
 	grid-column-start: 2;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -588,6 +599,7 @@ case 14:
 	
 	div#wrapper{
 	grid-column-start: 2;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -618,6 +630,7 @@ case 15:
 	
 	div#wrapper{
 	grid-column-start: 1;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -648,6 +661,7 @@ case 16:
 	
 	div#wrapper{
 	grid-column-start: 1;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -738,6 +752,7 @@ case 19:
 	
 	div#wrapper{
 	grid-column-start: 2;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -768,6 +783,7 @@ case 20:
 	
 	div#wrapper{
 	grid-column-start: 2;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -798,6 +814,7 @@ case 21:
 	
 	div#wrapper{
 	grid-column-start: 1;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -828,6 +845,7 @@ case 22:
 	
 	div#wrapper{
 	grid-column-start: 1;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -857,6 +875,7 @@ case 23:
 	}
 
 	div#wrapper{
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 
@@ -918,6 +937,7 @@ case 25:
 
 	div#wrapper{
 	grid-column-start: 1;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	grid-row-end: span 2;
 	}
@@ -1074,6 +1094,7 @@ case 30:
 
 	div#wrapper{
 	grid-column-start: 1;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 
@@ -1136,6 +1157,7 @@ case 32:
 
 	div#wrapper{
 	grid-column-start: 1;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 
@@ -1167,6 +1189,7 @@ case 33:
 
 	div#wrapper{
 	grid-column-start: 2;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	grid-row-end: span 2;
 	}
@@ -1198,6 +1221,7 @@ case 34:
 	
 	div#wrapper{
 	grid-column-start: 3;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	grid-row-end: span 2;
 	}
@@ -1231,6 +1255,7 @@ case 35:
 	
 	div#wrapper{
 	grid-column-start: 2;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -1258,11 +1283,12 @@ case 36:
 	div#navigation{
 	grid-column-start: 2;
 	grid-row-start: 2;
-	grid-row-end: span 2;ù
+	grid-row-end: span 2;
 	}
 	
 	div#wrapper{
 	grid-column-start: 3;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -1294,6 +1320,7 @@ case 37:
 	
 	div#wrapper{
 	grid-column-start: 2;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
@@ -1326,6 +1353,7 @@ case 38:
 	
 	div#wrapper{
 	grid-column-start: 3;
+	grid-column-end: span 1;
 	grid-row-start: 2;
 	}
 	
