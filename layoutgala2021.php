@@ -1,4 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<meta charset="UTF-8">
 <html>
 <head>   
 <?php
@@ -17,24 +18,27 @@ if (($layout < 1) OR ($layout > 40)) $layout = 1;
 <script type="text/javascript" src="js/filler.js"></script>
 <style type="text/css">
 html,body{margin:0;padding:0}
-body{font: 76% arial,sans-serif}
+body{font: 76% arial,sans-serif; background: #ddd;}
 p{margin:0 10px 10px}
 #content a, #navigation a, #extra a {display:block;color: #981793;padding:10px}
 div#header h1{margin:0;
  padding-left:10px;background: #EEE;color: #79B30B}
+ div#header h2{margin:0;text-align: end;
+ padding-right:10px;background: #EEE;color: #79B30B}
 #header img {vertical-align: top; padding: .25em 2em .25em 0;}
 div#content p{line-height:1.4}
 div#navigation{background:#B9CAFF}
 div#extra{background:#FF8539}
 div#footer{background: #333;color: #FFF}
 div#footer p{margin:0;padding:5px 10px}
-@media screen and (min-width: 1024px) {
-.layoutchoser {
-	position: fixed;
-    bottom: 0;
-    width: 100%;
-	padding: 1em 1em 0 1em;
-}
+div#content{background: #fff;}
+@media screen and (min-width: 1160px) {
+	.layoutchoser {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		padding: 1em 1em 0 1em;
+	}
 }
 .layoutchoser img { padding: 1em .5em; }
 .layoutchoser a { position:relative; }
@@ -44,27 +48,20 @@ div#footer p{margin:0;padding:5px 10px}
 
 /* Mode mobile ici sans media queries */
 	div#container {
-	grid-template-columns: 100%;
+	display: grid;
 	}
 
 	div#header, div#footer{
-	grid-column-start: 1;
-	grid-column-end: span 1;
 	}
 
 	div#navigation{
-	grid-column-start: 1;
-	grid-row-start: 3;
 	}
 
 	div#wrapper{
-	grid-column-start: 1;
-	grid-row-start: 2;
+	display: grid;
 	}
 
 	div#extra{
-	grid-column-start: 1;
-	grid-row-start: 4;
 	}
 
 @media screen and (min-width: 768px) {
@@ -103,7 +100,6 @@ switch ($layout){
 	case 39:
 ?>
 	div#container {
-	display: grid;
 	grid-template-columns: 50% 50%;
 	}
 
@@ -142,7 +138,6 @@ switch ($layout){
 	case 40:
 ?>
 	div#container {
-	display: grid;
 	grid-template-columns: 50% 50%;
 	}
 
@@ -173,7 +168,7 @@ switch ($layout){
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1160px) {
 /* ce switch pour desktop */
 <?php
 switch ($layout) {
@@ -181,7 +176,6 @@ case 1:
 ?> 
    
 	div#container {
-	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	}
 
@@ -212,7 +206,6 @@ case 2:
 	?>
 	
 		div#container {
-	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	}
 
@@ -243,7 +236,7 @@ case 3:
 	?>
 	
 	div#container {
-	display: grid;
+
 	grid-template-columns: 2fr 1fr 1fr;
 	}
 
@@ -274,7 +267,6 @@ case 4:
 	?>
 	
 	div#container {
-	display: grid;
 	grid-template-columns: 2fr 1fr 1fr;
 	}
 
@@ -306,7 +298,6 @@ case 5:
 	?>
 	
 	div#container {
-	display: grid;
 	grid-template-columns: 1fr 1fr 2fr;
 	}
 
@@ -336,7 +327,6 @@ case 6:
 	?>
 	
 	div#container {
-	display: grid;
 	grid-template-columns: 1fr 1fr 2fr;
 	}
 
@@ -351,6 +341,7 @@ case 6:
 	}
 
 	div#wrapper{
+	display:grid;
 	grid-column-start: 3;
 	grid-row-start: 2;
 	}
@@ -366,8 +357,9 @@ case 7:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 7.8% 20.8% 7.8% 31.8%;
+	grid-template-columns: auto 240px 1fr 240px auto;
+	width: 1160px;
+	margin: 0 auto;
 	}
 
 	div#header, div#footer{
@@ -397,8 +389,9 @@ case 8:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 7.8% 20.8% 7.8% 31.8%;
+	grid-template-columns: auto 240px 1fr 240px auto;
+	width: 1160px;
+	margin: 0 auto;
 	}
 	
 	div#header, div#footer{
@@ -428,8 +421,9 @@ case 9:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 20.8% 7.8% 7.8% 31.8%;
+	grid-template-columns: auto 1fr 240px 240px auto;
+	width: 1160px;
+	margin: 0 auto;
 	}
 	
 	div#header, div#footer{
@@ -459,8 +453,9 @@ case 10:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 20.8% 7.8% 7.8% 31.8%;
+	grid-template-columns: auto 1fr 240px 240px auto;
+	width: 1160px;
+	margin: 0 auto;
 	}
 	
 	div#header, div#footer{
@@ -490,8 +485,9 @@ case 11:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 7.8% 7.8% 20.8% 31.8%;
+	grid-template-columns: auto 240px 240px 1fr auto;
+	width: 1160px;
+	margin: 0 auto;
 	}
 	
 	div#header, div#footer{
@@ -521,8 +517,9 @@ case 12:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 7.8% 7.8% 20.8% 31.8%;
+	grid-template-columns: auto 240px 240px 1fr auto;
+	width: 1160px;
+	margin: 0 auto;
 	}
 	
 	div#header, div#footer{
@@ -552,8 +549,7 @@ case 13:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 10.4% 79.2% 10.4%;
+	grid-template-columns: 240px 1fr 240px;
 	}
 	
 	div#header, div#footer{
@@ -583,8 +579,7 @@ case 14:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 10.4% 79.2% 10.4%;
+	grid-template-columns: 240px 1fr 240px;
 	}
 	
 	div#header, div#footer{
@@ -614,8 +609,7 @@ case 15:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 79.2% 10.4% 10.4%;
+	grid-template-columns: 1fr 240px 240px;
 	}
 	
 	div#header, div#footer{
@@ -645,8 +639,7 @@ case 16:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 79.2% 10.4% 10.4%;
+	grid-template-columns: 1fr 240px 240px;
 	}
 	
 	div#header, div#footer{
@@ -676,8 +669,7 @@ case 17:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 10.4% 10.4% 79.2%;
+	grid-template-columns: 240px 240px 1fr;
 	}
 	
 	div#header, div#footer{
@@ -706,8 +698,7 @@ case 18:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 10.4% 10.4% 79.2%;
+	grid-template-columns: 240px 240px 1fr;
 	}
 	
 	div#header, div#footer{
@@ -736,8 +727,7 @@ case 19:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 10.4% 56.6% 33%;
+	grid-template-columns: 240px 2fr 1fr;
 	}
 	
 	div#header, div#footer{
@@ -767,8 +757,7 @@ case 20:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 33% 56.6% 10.4%;
+	grid-template-columns: 1fr 2fr 240px;
 	}
 	
 	div#header, div#footer{
@@ -798,8 +787,7 @@ case 21:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 64.6% 10.4% 25%;
+	grid-template-columns: 2fr 240px 1fr;
 	}
 	
 	div#header, div#footer{
@@ -829,8 +817,7 @@ case 22:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 64.6% 25% 10.4%;
+	grid-template-columns: 2fr 1fr 240px;
 	}
 	
 	div#header, div#footer{
@@ -860,8 +847,8 @@ case 23:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 89.6% 10.4%;
+	grid-template-columns: 1fr 240px;
+	grid-template-rows: auto auto 1fr auto;
 	}
 
 	div#header, div#footer{
@@ -875,8 +862,10 @@ case 23:
 	}
 
 	div#wrapper{
+	grid-column-start: 1;
 	grid-column-end: span 1;
 	grid-row-start: 2;
+	grid-row-end: span 2;
 	}
 
 	div#extra{
@@ -890,8 +879,8 @@ case 24:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 10.4% 89.6%;
+	grid-template-columns: 240px 1fr;
+	grid-template-rows: auto auto 1fr auto;
 	}
 
 	div#header, div#footer{
@@ -921,8 +910,8 @@ case 25:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 67% 33%;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: auto auto 1fr auto;
 	}
 
 	div#header, div#footer{
@@ -933,6 +922,7 @@ case 25:
 	div#navigation{
 	grid-column-start: 2;
 	grid-row-start: 2;
+	grid-auto-rows: auto;
 	}
 
 	div#wrapper{
@@ -953,8 +943,8 @@ case 26:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 33% 67%;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: auto auto 1fr auto;
 	}
 
 	div#header, div#footer{
@@ -984,8 +974,7 @@ case 27:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 1fr 1fr;
 	}
 
 	div#header, div#footer{
@@ -1015,8 +1004,7 @@ case 28:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 1fr 1fr;
 	}
 
 	div#header, div#footer{
@@ -1046,8 +1034,7 @@ case 29:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 30% 70%;
+	grid-template-columns: 1fr 2fr;
 	}
 
 	div#header, div#footer{
@@ -1078,8 +1065,7 @@ case 30:
 	
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 70% 30%;
+	grid-template-columns: 2fr 1fr;
 	}
 
 	div#header, div#footer{
@@ -1110,8 +1096,7 @@ case 31:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 10.4% 89.6%;
+	grid-template-columns: 240px 1fr;
 	}
 
 	div#header, div#footer{
@@ -1141,8 +1126,7 @@ case 32:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 89.6% 10.4%;
+	grid-template-columns: 1fr 240px;
 	}
 
 	div#header, div#footer{
@@ -1173,8 +1157,10 @@ case 33:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 26% 10.4% 31.8%;
+	grid-template-columns: auto 1fr 240px auto;
+	max-width: 1160px;
+	margin: 0 auto;
+	grid-template-rows: auto auto 1fr auto;
 	}
 
 	div#header, div#footer{
@@ -1205,8 +1191,10 @@ case 34:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 10.4% 26% 31.8%;
+	grid-template-columns: auto 240px 1fr auto;
+	max-width: 1160px;
+	margin: 0 auto;
+	grid-template-rows: auto auto 1fr auto;
 	}
 	
 	div#header, div#footer{
@@ -1237,9 +1225,9 @@ case 35:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 26% 10.4% 31.8%;
-	grid-template-rows: auto;
+	grid-template-columns: auto 1fr 240px auto;
+	max-width: 1160px;
+	margin: 0 auto;
 	}
 	
 	div#header, div#footer{
@@ -1270,9 +1258,9 @@ case 36:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 10.4% 26% 31.8%;
-	grid-template-rows: auto;
+	grid-template-columns: auto 240px 1fr auto;
+	max-width: 1160px;
+	margin: 0 auto;
 	}
 	
 	div#header, div#footer{
@@ -1303,9 +1291,9 @@ case 37:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 26% 10.4% 31.8%;
-	grid-template-rows: auto;
+	grid-template-columns: auto 1fr 240px auto;
+	max-width: 1160px;
+	margin: 0 auto;
 	}
 	
 	div#header, div#footer{
@@ -1336,9 +1324,9 @@ case 38:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 10.4% 26% 31.8%;
-	grid-template-rows: auto;
+	grid-template-columns: auto 240px 1fr auto;
+	max-width: 1160px;
+	margin: 0 auto;
 	}
 	
 	div#header, div#footer{
@@ -1369,9 +1357,9 @@ case 39:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 18.2% 18.2% 31.8%;
-	grid-template-rows: auto;
+	grid-template-columns: auto 1fr 1fr auto;
+	max-width: 1160px;
+	margin: 0 auto;
 	}
 	
 	div#header, div#footer{
@@ -1401,9 +1389,9 @@ case 40:
 	?>
 	
 	div#container {
-	display: grid;
-	grid-template-columns: 31.8% 18.2% 18.2% 31.8%;
-	grid-template-rows: auto;
+	grid-template-columns: auto 1fr 1fr auto;
+	max-width: 1160px;
+	margin: 0 auto;
 	}
 	
 	div#header, div#footer{
@@ -1431,10 +1419,10 @@ case 40:
 	break;
 }
 ?>
-} /*fermeture de la mediaqueries 1024px */
+} /*fermeture de la mediaqueries 1160px */
 </style>
 <div id="container">
-<div id="header"><h1><img src='images/layout0<?php echo str_pad($layout, 2, '0', STR_PAD_LEFT) ?>.gif' />Layout n°<?=$layout?></h1></div>
+<div id="header"><h1><img src='images/layout0<?php echo str_pad($layout, 2, '0', STR_PAD_LEFT) ?>.gif' />Layout n°<?=$layout?></h1><h2>Retour à la <a href="./">page d'accueil</a></h2></div>
 <div id="wrapper">
 <div id="content">
 <p><strong>1) Content here.</strong> column long long column very long fill fill fill long text text column text silly very make long very fill silly make make long make text fill very long text column silly silly very column long very column filler fill long make filler long silly very long silly silly silly long filler make column filler make silly long long fill very.</p>
