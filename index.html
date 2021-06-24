@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<meta charset="UTF-8">
+<html>
+<head>   
+<title>Les 40 layouts</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta name="generator" content="HAPedit 3.1">
+</head>
+<body>
+<script type="text/javascript" src="js/filler.js"></script>
+<style type="text/css">
+html,body{margin:0;padding:0}
+body{font: 76% arial,sans-serif}
+p{margin:0 10px 10px}
+#content a, #navigation a, #extra a {display:block;color: #981793;padding:10px}
+div#header h1{text-align: center; margin:0;padding-left:10px;background: #EEE;color: #79B30B}
+#header img {vertical-align: top; padding: .25em 2em .25em 0;}
+div#content p{line-height:1.4}
+div#navigation{background:#B9CAFF}
+div#extra{background:#FF8539}
+div#footer{background: #EEE;color: #79B30B}
+div#footer p{margin:0;padding:5px 10px}
+h1, h2, h3{margin: 10px}
+div#signature{text-align: left;}
+
+div#container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	}
+
+	div#header, div#footer{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	}
+
+	div#navigation{
+	grid-column-start: 1;
+	grid-row-start: 3;
+	}
+
+	div#wrapper{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	grid-row-start: 2;
+	}
+
+	div#extra{
+	grid-column-start: 2;
+	grid-row-start: 3;
+	}
+</style>
+<div id="container">
+<div id="header"><h1>Le projet des 40 layouts</h1></div>
+<div id="wrapper">
+<div id="content">
+<h2>Explications :</h2>
+<p>   En 2005, Alessandro Fulciniti propose un HTML assez simple avec 40 variantes d’affichages pour gérer l’affichage d’une page web avec :</p>
+<ol>
+    <li>entête</li>
+    <li>pied de page</li>
+    <li>contenu</li>
+    <li>navigation principale</li>
+    <li>navigation secondaire</li>
+</ol>
+<p>15 ans après, ce code fonctionne toujours, mais mériterait d’être actualisé, je l'ai donc fait dans le cadre d'un stage chez pyrat.net avec ce que permettent les CSS modernes : flexbox et grid layout.</p>
+<p>Le site à <a href="https://www.html.it/app/uploads/blog/layoutgala/index.html">l'origine du projet</a> est donc accessible
+</div></p>
+</div>
+<div id="navigation">
+<p><h1>Objectif du projet :</h1>
+    <h3>Refaire les 40 layouts</h3>
+<ul>
+    <li>en gardant le HTML tel quel</li>
+    <li>et en refaisant les CSS de manière moderne (grid et flexbox)</li>
+    <li>et en en profitant pour équilibrer la hauteur des colonnes</li>
+    <li>et faire les déclinaisons RWD pour tablettes et mobile</li>
+    <li>et de faire un site de démo semblable à l’original pour faire la démonstration des 40 layouts</li>
+    <li>le tout en open source, publié sur Github</li>
+</ul>
+</p>
+</div>
+<div id="extra">
+<h1>L'open source</h1>
+<p> Il faut savoir que l'open Source est un code conçu pour être accessible au public : n'importe qui peut voir, modifier et distribuer le code à sa convenance.</p> </br>
+<p> Comme dit auparavant mon projet est totalement en open source, disponible sur github.</p> </br>
+<p> Vous pouvez donc retrouver le <a href="https://github.com/Jxles17/40layouts">code entier</a> ainsi que toutes les ressources</p>
+</p>
+</div>
+<div id="footer">
+<p><h1>Vous pouvez accéder au site résultant de ce projet via : <a href="layoutgala2021.php">layoutgala2021</a></h1></p>
+</div>
+<div id="signature">
+<p>Réalisé par Jules Hervé, étudiant en BTS SIO 2020-2021</p>
+</div>
+</div>
+</body>
+</html>
+
